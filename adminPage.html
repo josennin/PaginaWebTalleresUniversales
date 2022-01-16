@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pagina Admin</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicon -->
+   <link href="img/tallerUni.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+<script src="js/usuario_controller.js"></script>
+  <script src="js/admin_controller.js"></script>
+  <script src="js/listaReportes.js"></script>
+  <script src="js/editarReportes.js"></script>
+    
+</head>
+
+<body>
+  <!-- Page Content
+    ================================================== -->
+  <!-- Hero -->
+
+  <section class="hero">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <a class="hero-brand" href="index.html" title="Home"><img alt="Bell Logo" src="img/logo1.png"></a>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <h1>
+            Bienvenido Administrador
+          </h1>
+
+        <p class="tagline">
+          Se mostraran la lista de reportes que se han generado.
+        </p>
+        <a class="btn btn-full" href="#about">Lista de reportes</a>
+      </div>
+    </div>
+
+  </section>
+  <!-- /Hero -->
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="index.html"><img src="img/logo1.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Bell</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="#about">Lista de reportes</a></li><!-- About Us -->
+          <li><a href="#features">Registrar Administrador</a></li><!-- About Us -->
+          <li><a href="javascript:void(0)" onclick="salir()" id=""><b>Log out</b> </a>
+        
+      </nav>
+      <!-- #nav-menu-container -->
+
+
+</header>
+  <!-- #header -->
+
+  <!-- About -->
+
+  <section class="about" id="about">
+    <div class="container text-center">
+      <div class="tableContainer">
+        <table id="listaReporte" class="table table-responsive 
+    table-hover table-bordered table-striped">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Provincia</th>
+                <th>Telefono</th>
+                <th>Fecha</th>
+                <th>Tipo de Articulo</th>
+                <th>Daño</th>
+                <th>Marca</th>
+                <th>Garantia</th>
+                <th>Editar</th>
+                <th>Borrar</th>
+            </tr>
+        </table>
+    </div>
+    </div>
+  </section>
+  
+  <!-- /About -->
+  <!-- Parallax -->
+
+  <div >
+    <section class="features" id="features">
+    <div class="container">
+      <div class="container text-center">
+      <div class="formContainer">
+        <h1 id="titulo">Registrar Administrador</h1>
+        <div id="izquierda" >
+        <form onsubmit="return registrarUsu()">
+            <div class="form-group">
+              
+                <label class="form1" for="username">Nombre:</label><br>
+                <input class="form1imp" type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label class="form1" for="apellidos">Apellidos:</label><br>
+                <input class="form1imp" type="text" class="form-control" id="apellidos" required>
+            </div>
+            <div class="form-group">
+                <label class="form1" for="telefono">Correo:</label><br>
+                <input class="form1imp" type="text" class="form-control" id="correo" required>
+            </div>
+            <div class="form-group">
+                <label class="form1" for="fecha">Username:</label><br>
+                <input class="form1imp" type="text" class="form-control" id="username" required>
+            </div>
+            <div class="form-group">
+                <label class="form1" for="fecha">Password:</label><br>
+                <input class="form1imp" type="text" class="form-control" id="password" required>
+            </div>
+          </div>
+          </div>
+          
+            <button id="boton" type="submit" class="btn btn-default">Registrar</button>
+            <p id="mensaje3"></p>
+
+
+      </div>
+  </section>
+
+
+  </div>
+  <!-- /Parallax -->
+  <!-- Features -->
+
+  <section class="features" id="features">
+    <div class="container">
+     
+
+
+      </div>
+  </section>
+  <!-- /Features -->
+  <!-- Call to Action -->
+
+  <section >
+    <div class="container">
+     
+
+
+
+    </div>
+  </section>
+  <!-- /Call to Action -->
+  <!-- Portfolio -->
+
+  <section >
+    
+
+
+
+  </section>
+  <!-- /Portfolio -->
+  <!-- Team -->
+
+ 
+
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text">
+              Talleres Universales de Cartago
+            </p>
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bell
+              -->
+              <p>Tel. 2290-0353 / 2290-0229</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html">Inicio</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#about">Nosotros</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#features">Mision y Vision</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#portfolio">Reportar</a>
+             </li>
+                      
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/tether/js/tether.min.js"></script>
+  <script src="lib/stellar/stellar.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/lockfixed/lockfixed.min.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Talleres Universales de Cartago</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+   <!-- Favicon -->
+   <link href="img/tallerUni.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="js/usuario_controller.js"></script>
+    
+</head>
+
+<body>
+  <!-- Page Content
+    ================================================== -->
+  <!-- Hero -->
+
+  <section class="hero">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <a class="hero-brand" href="index.html" title="Home"><img alt="Bell Logo" src="img/logo1.png"></a>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <h1>
+            Bienvenidos
+          </h1>
+
+        <p class="tagline">
+          
+        </p>
+        <a class="btn btn-full" href="#about">Iniciar</a>
+      </div>
+    </div>
+
+  </section>
+  <!-- /Hero -->
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="index.html"><img src="img/logo1.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Bell</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="#about">Nosotros</a></li><!-- About Us -->
+          <li><a href="#marcasdes">Marcas destacadas</a></li><!-- About Us -->
+          <li><a href="#features">Mision y Vision</a></li><!-- Features -->
+          <li><a href="#portfolio">Reportar</a></li><!--Portfolio-->
+          <li><a href="#contact">Contactenos</a></li>
+          <li><a id="log"><b>Login</b> </a>
+      <ul id="login-dp" class="dropdown-menu">
+        <li>
+           <div class="form">
+              <form class="form" role="form" method="post" action="admin.php" id="login-nav" onsubmit="return login()">
+                    <div class="form-group">
+                      <h3>Username</h3>
+                       <input type="text" class="form-control" id="username"  placeholder="Username" required>
+                    </div>
+                    <div class="form-group">
+                      <h3>Password</h3>
+                       <input type="password" class="form-control" id="password"  placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                       <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                    </div>
+                   <p id="mensaje"></p></form>
+        </ul>
+   
+      </nav>
+      <!-- #nav-menu-container -->
+
+
+</header>
+  <!-- #header -->
+
+  <!-- About -->
+
+  <section class="about" id="about">
+    <div class="container text-center">
+      <h2 style="font-size: 60px; color:  #199EB8;">
+          Nosotros
+        </h2>
+
+      <p style="font-size: 25px;">
+        Nosotros somos una empresa dedicada a darle servicio de reparacion a articulos de linea blanca como cocinas, frigeradoras, hornos microondas etc. audio y video a todo el pais de Costa Rica, especialmente marcas como Daewoo, Daytron, Hisense, Midea y Toshiba.
+      </p>
+
+      <div class="row stats-row">
+        <div class="stats-col text-center col-md-3 col-sm-6">
+          <div class="circle">
+            Daewoo
+          </div>
+        </div>
+
+        <div class="stats-col text-center col-md-3 col-sm-6">
+          <div class="circle">
+           Daytron
+          </div>
+        </div>
+
+        <div class="stats-col text-center col-md-3 col-sm-6">
+          <div class="circle">
+            Hisense
+          </div>
+        </div>
+
+        <div class="stats-col text-center col-md-3 col-sm-6">
+          <div class="circle">
+           Midea
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br id="marcasdes">
+   <br >
+    <br  >
+     <br>
+     <br>
+  <!-- /About -->
+  <!-- Parallax -->
+  <div ></div>
+  <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
+    <h2 style="font-size: 60px;">
+        Marcas destacadas
+      </h2>
+
+    <img style="width: 200px; height: 200px;" src="http://lofrev.net/wp-content/photos/2014/07/Daewoo-Logo.jpg">
+    <img style="width: 200px; height: 200px;" src="http://daytron.com.br/img/logo.png">
+    <img style="width: 290px; height: 200px;" src="http://logok.org/wp-content/uploads/2014/10/Hisense-logo-old.png">
+    <img style="width: 290px; height: 200px;" src="http://logos-download.com/wp-content/uploads/2016/05/Midea_logo_logotype.png">
+    <img style="width: 200px; height: 200px;" src="https://cdn.worldvectorlogo.com/logos/toshiba-leading-innovation.svg">
+  </div>
+  <!-- /Parallax -->
+  <!-- Features -->
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="text-center">
+          Mision y Vision
+        </h2>
+
+      <div class="container" style="border: solid; color: #199EB8">
+        <h1 class="titumisi">Misión:</h1>
+        <p class="textmisi">Empresa de servicio dedicada a satisfacer las necesidades de servicio técnico y mantenimiento que el cliente requiera, elevando así el rendimiento de sus productos de uso doméstico e industrial, de una manera oportuna y cómoda atreves del diagnóstico y reparación de nuestro personal.</p>
+      </div>
+      <br>
+      <div class="container" style="border: solid; color: #199EB8">
+        <h1 class="titumisi">Visión:</h1>
+        <p class="textmisi">Ser una empresa líder en el mercado nacional, brindando servicios de reparación y mantenimiento a los productos de uso doméstico e industrial, asistiendo en el menor tiempo posible a satisfacer las necesidades del cliente, con una atención personalizada y una supervisión constante a sus equipos.</p>
+      </div>
+  </section>
+  <!-- /Features -->
+  <!-- Call to Action -->
+
+  <section class="cta">
+    <div class="container">
+      
+    </div>
+  </section>
+  <!-- /Call to Action -->
+  <!-- Portfolio -->
+
+  <section class="portfolio" id="portfolio">
+    <div class="container text-center">
+      <div class="formContainer">
+        <h1 id="titulo">Reporte</h1>
+        <div id="izquierda" >
+        <form onsubmit="return registrar()">
+            <div class="form-group">
+              
+                <label class="form1" for="username">Nombre:</label><br>
+                <input class="form1imp" type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label class="form1" for="apellidos">Apellidos:</label><br>
+                <input class="form1imp" type="text" class="form-control" id="apellidos" required>
+            </div>
+            <div class="form-group">
+                <label class="form1"  for="provincia">Provincia:</label><br>
+                <select class="combobox" id="provincia">
+                    <option value="San Jose">San José</option>
+                    <option value="Limon">Limón</option>
+                    <option value="Alajuela">Alajuela</option>
+                    <option value="Cartago">Cartago</option>
+                    <option value="Heredia">Heredia</option>
+                    <option value="Guanacaste">Guanacaste</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form1" for="telefono">Teléfono:</label><br>
+                <input class="form1imp" type="text" class="form-control" id="telefono" required>
+            </div>
+            <div class="form-group">
+                <label class="form1" for="fecha">Fecha:</label><br>
+                <input class="form1imp" type="date" class="form-control" id="fecha" required>
+            </div>
+          </div>
+          </div>
+          
+         <div id="derecha" >
+          <div class="form-group">
+                <label class="form2" for="tipoArticulo">Tipo de articulo:</label><br>
+                <input class="form2" type="radio" name="tipart" value="Lavadora">Lavadora
+                <input class="form2" type="radio" name="tipart" value="Cocina">Cocina
+                <input class="form2" type="radio" name="tipart" value="Audio y Video">Audio y Video
+            </div>
+            <div class="form-group">
+                <label class="form2" for="marca">Marca:</label><br>
+                <select class="combobox2" id="marca">
+                    <option value="Daewoo">Daewoo</option>
+                    <option value="Daytron">Daytron</option>
+                    <option value="Hisense">Hisense</option>
+                    <option value="Midea">Midea</option>
+                    <option value="Toshiba">Toshiba</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form2" for="garantia">¿Posee garantia?</label><br>
+                <input class="form2" type="radio" name="gara" value="Si">Si
+                <input class="form2" type="radio" name="gara" value="No">No
+            </div>
+            <div class="form-group">
+                <label class="form2" for="daño">Daño:</label>
+                <br>
+
+                <textarea rows="4" cols="50" class="form-controldaño" id="dano" name="dano" required></textarea>
+            </div>
+              </div>         
+
+            <button id="boton" type="submit" class="btn btn-default">Enviar</button>
+            <p id="mensaje2"></p>
+        </form>
+       
+   
+  <!-- /Portfolio -->
+  <!-- Team -->
+
+  <section class="cta">
+    <div class="container">
+      
+    </div>
+  </section>
+  <!-- /Team -->
+  <!-- @component: footer -->
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="section-title">Contacto</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4">
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>Rohrmoser<br>Plaza Mayor 100 mts Oeste. Pavas</p>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>info@example.com</p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>2290-0353 / 2290-0229</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-8">
+          <div class="form">
+            <div id="sendmessage">Tu mensaje se ha enviado. Gracias!</div>
+            <div id="errormessage"></div>
+            <form action="enviar.php" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="asunto" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="mensaje" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text">
+              Talleres Universales de Cartago
+            </p>
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bell
+              -->
+              <p>Tel. 2290-0353 / 2290-0229</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html">Inicio</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#about">Nosotros</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#features">Mision y Vision</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#portfolio">Reportar</a>
+             </li>
+                      
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/tether/js/tether.min.js"></script>
+  <script src="lib/stellar/stellar.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/lockfixed/lockfixed.min.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Editar Reporte</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicon -->
+   <link href="img/tallerUni.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="js/admin_controller.js"></script>
+  <script src="js/listaReportes.js"></script>
+  <script src="js/editarReportes.js"></script>
+    
+</head>
+
+<body>
+  <!-- Page Content
+    ================================================== -->
+   <!-- Header -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="index.html"><img src="img/logo1.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Bell</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="#about">Editar Reporte</a></li><!-- About Us -->
+          <li><a href="adminPage.html" id=""><b>Log out</b> </a>
+        
+      </nav>
+      <!-- #nav-menu-container -->
+
+
+</header>
+  <!-- #header -->
+
+  <!-- About -->
+
+  <section class="about" id="about">
+    <div class="formContainer">
+        <h1 id="titulo">Editar usuario</h1>
+        <form onsubmit="return editar()">
+            <div class="form-group">
+              
+                <label class="form1" for="username">Nombre:</label><br>
+                <input class="form1imp" type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label class="form1" for="apellidos">Apellidos:</label><br>
+                <input class="form1imp" type="text" class="form-control" id="apellidos" required>
+            </div>
+            <div class="form-group">
+                <label class="form1"  for="provincia">Provincia:</label><br>
+                <select class="combobox" id="provincia">
+                    <option value="San Jose">San José</option>
+                    <option value="Limon">Limón</option>
+                    <option value="Alajuela">Alajuela</option>
+                    <option value="Cartago">Cartago</option>
+                    <option value="Heredia">Heredia</option>
+                    <option value="Guanacaste">Guanacaste</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form1" for="telefono">Teléfono:</label><br>
+                <input class="form1imp" type="text" class="form-control" id="telefono" required>
+            </div>
+            <div class="form-group">
+                <label class="form1" for="fecha">Fecha:</label><br>
+                <input class="form1imp" type="date" class="form-control" id="fecha" required>
+            </div>
+          </div>
+          </div>
+          
+         <div id="derecha" >
+          <div class="form-group">
+                <label class="form2" for="tipoArticulo">Tipo de articulo:</label><br>
+                <input class="form2" type="radio" name="tipart" value="Lavadora">Lavadora
+                <input class="form2" type="radio" name="tipart" value="Cocina">Cocina
+                <input class="form2" type="radio" name="tipart" value="Audio y Video">Audio y Video
+            </div>
+            <div class="form-group">
+                <label class="form2" for="marca">Marca:</label><br>
+                <select class="combobox2" id="marca">
+                    <option value="Daewoo">Daewoo</option>
+                    <option value="Daytron">Daytron</option>
+                    <option value="Hisense">Hisense</option>
+                    <option value="Midea">Midea</option>
+                    <option value="Toshiba">Toshiba</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form2" for="garantia">¿Posee garantia?</label><br>
+                <input class="form2" type="radio" name="gara" value="Si">Si
+                <input class="form2" type="radio" name="gara" value="No">No
+            </div>
+            <div class="form-group">
+                <label class="form2" for="daño">Daño:</label>
+                <br>
+
+                <textarea rows="4" cols="50" class="form-controldaño" id="dano" name="dano" required></textarea>
+            </div>
+              </div>         
+
+            <button id="boton" type="submit" class="btn btn-default">Enviar</button>
+            <p id="mensaje2"></p>
+    </div>
+  </section>
+  
+  <!-- /About -->
+ 
+ 
+
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text">
+              Talleres Universales de Cartago
+            </p>
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bell
+              -->
+              <p>Tel. 2290-0353 / 2290-0229</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html">Inicio</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#about">Nosotros</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#features">Mision y Vision</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#portfolio">Reportar</a>
+             </li>
+                      
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/tether/js/tether.min.js"></script>
+  <script src="lib/stellar/stellar.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/lockfixed/lockfixed.min.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+</body>
+</html>
